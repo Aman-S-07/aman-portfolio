@@ -85,15 +85,6 @@ ansible-playbook -i inventory playbook.yml
 
 ---
 
-## 📈 Future Enhancements
-
-* CI/CD pipeline using GitHub Actions
-* Custom domain integration
-* Backend integration
-* UI improvements
-
----
-
 ## 📬 Contact
 
 * 📧 Email: [amansahu7431@gmail.com](mailto:amansahu7431@gmail.com)
