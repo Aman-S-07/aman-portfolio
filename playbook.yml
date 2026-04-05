@@ -1,0 +1,22 @@
+- name: Setup Nginx and deploy website
+  hosts: web1
+  become: yes
+
+  tasks:
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Start Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Copy website file
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
